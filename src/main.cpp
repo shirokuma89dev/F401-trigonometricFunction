@@ -34,12 +34,12 @@ void setup() {
 
     startTime = micros();
     for (int i = 0; i < 1000; i++) {
-        calcSin();
+        calcAtan();
     }
     atanDuration = micros() - startTime;
 
-    printf("sin(x): %luE-6[s]\n", sinDuration);
-    printf("arcsin(x): %luE-6[s]\n", atanDuration);
+    printf("sin(x): %lu*10^-6[s]\n", sinDuration);
+    printf("arctan(x): %lu*10^-6[s]\n", atanDuration);
 }
 
 void loop() {}
